@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class SecondController {
 
     @GetMapping("/hi")
-    public String nicemeetyou(Model model){
+    public String niceMeetyou(Model model){
         model.addAttribute("username","LSW");
         return "greeting";
     }
