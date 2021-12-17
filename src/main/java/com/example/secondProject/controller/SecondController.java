@@ -13,4 +13,11 @@ public class SecondController {
         model.addAttribute("username","LSW");
         return "greeting";
     }
+
+    @GetMapping("/bye")
+    public String seeyounext(Model model){
+        model.addAttribute("nickname","이승원");
+
+        return "byebye";
+    }
 }
